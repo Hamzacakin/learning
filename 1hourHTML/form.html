@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <p>
+      <mark
+        >web sitesi içerisinde oluşturacağımız formları form etiketi ile
+        oluştururuz. yazılacak diğer detaylar da form etiketi içerisinde yer
+        alır.
+      </mark>
+    </p>
+    <h1><mark>... Form ...</mark></h1>
+    <ul>
+      <h3>input</h3>
+      <p style="background-color: goldenrod">
+        kullanıcıdan alacağımız verileri alırız
+      </p>
+      <h3>textarea</h3>
+      <p style="background-color: palegreen">Lorem, ipsum.</p>
+      <h3>select</h3>
+      <p style="background-color: yellowgreen">Lorem ipsum dolor sit amet.</p>
+      <h3>button</h3>
+      <p style="background-color: cadetblue">Lorem, ipsum dolor.</p>
+      <h3>fieldset</h3>
+      <p style="background-color: bisque">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+      <h3>legend</h3>
+      <p style="background-color: aqua">
+        Lorem ipsum dolor, sit amet consectetur adipisicing.
+      </p>
+    </ul>
+    <form action="">
+      <label for="isminiz">Ad:</label>
+      <input type="text" name="isim" id="isminiz" placeholder="isim" required />
+      <br /><br />
+      <label for="surname">Soyad:</label>
+      <input
+        type="text"
+        name="soyisim"
+        id="surname"
+        placeholder="soyisim"
+        required
+      />
+      <br /><br />
+      <label for="şifre">Şifre:</label>
+      <input
+        type="password"
+        name="şifre"
+        id="password"
+        placeholder="şifre"
+        required
+        maxlength="16"
+        minlength="8"
+
+      />
+      <br /><br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@mail.com"
+        required
+      />
+      <br /><br />
+
+      <label for="telefon">Telefon No:</label>
+      <input type="tel" name="tel" id="telefon" placeholder="(555)-123-4567" />
+      
+      
+      <br><br>
+      <label for="birthday">Doğum Günü</label>
+      <input type="date" name="doğumgünü" id="birthday" placeholder="Doğum Tarihiniz">
+      
+      <br><br>
+      <label for="kardes">Kardeş Sayısı:</label>
+      <input type="number" name="kardessayisi" id="kardes" min="0" max="50">
+
+      <br><br>
+      <label for="cinsiyet">Cinsiyet:</label>
+     
+      <input type="radio" name="cinsiyet" id="kadın" value="kadın">
+      <label for="">Kadın</label>
+      <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+      <label for="">Erkek</label>
+      <br><br>
+      
+
+      <select name="" id="">
+        <option value="ssk">SSK</option>
+        <option value="bagkur">Bağkur</option>
+        <option value="emekli">Emekli Sandığı</option>
+      </select>
+
+      <br><br>
+      <input type="checkbox" name="" id="calisma">
+      <label for="">Aktif Olarak Çalışıyor</label><br><br>
+
+      <input type="file" name="dosya" id="dosya" required accept=".mp4"><br><br>
+
+      <textarea name="Öneri ve Şikayet" id="" cols="15" rows="5" placeholder="Ek olarak not girebilirsiniz"></textarea>
+      
+      
+      <hr />
+      <input
+        type="reset"
+        style="border-radius: 2rem; border: 2px solid red"
+      /><!--formu sıfırlamaya yarar-->
+      <input
+        type="submit"
+        style="border-radius: 2rem; border: 2px solid green"
+      /><!--formu göndermeye yarar-->
+    </form>
+  </body>
+</html>

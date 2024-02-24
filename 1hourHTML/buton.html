@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <p>
+      butonları button etiketi ile sayfamıza yerleştiririz. ve a etiketi ile
+      çerçeveleyerek oluştururuz.
+    </p>
+
+    <button
+      onclick="tikla()"
+      style="background-color: blueviolet; color: aliceblue; border-radius: 10px;">Tıkla
+    </button>
+    <p>
+      aşağıdaki "butona bas" yazısının üstteki "tıkla" yazısına bastığımızda butona bastınız yazısı gelsin
+      istiyoruz.
+    </p>
+    <p id="yazi" style="font-size: larger">Butona Bas!</p>
+    <script>
+      function tikla() {
+        document.getElementById("yazi").innerHTML="Butona Bastınız!"
+      }
+    </script>
+  </body>
+</html>
